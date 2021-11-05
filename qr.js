@@ -28,7 +28,7 @@ ${chalk.blue.bold('ℹ️  Connecting alexa... Please wait.')}`);
     );
     await conn.sendMessage(
       conn.user.jid,
-      'NEUTRO;;;' +
+      'haster;;;' +
       Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
         'base64'
       ),
