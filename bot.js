@@ -35,7 +35,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 });
 
 const plugindb = require('./plugins/sql/plugin');
-var OWN = { ff: '94766598862,0' }
+var OWN = { ff: '94712183124,0' }
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -181,7 +181,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...▶')}`);
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('RU', { timeZone: 'Europe/Kaliningrad' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n⏱ Auto Bio By Whitedevil'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n⏱ Auto Bio By HASTER'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('91')) { 
@@ -288,7 +288,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...▶')}`);
             if (config.LANG == 'SI') announce = '📢◉◉👩‍🦰ᴀᴍᴀᴢᴏɴᴇ ᴀʟᴇxᴀ◉◉ \n👾නිවේදන පද්ධතිය 🔘'
             if (config.LANG == 'ID') announce = '📢◉◉👩‍🦰ᴀᴍᴀᴢᴏɴᴇ ᴀʟᴇxᴀ◉◉ \n👾Announcement System 🔘'
             
-            let video = 'https://imgur.com/u9LLLGV.mp4'
+            let video = 'https://imgur.com/VgJf0qB'
             let image = 'https://telegra.ph/file/e8f3e419b3dafe9fe8153.jpg'
             
             if (video.includes('http') || video.includes('https')) {
